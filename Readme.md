@@ -29,12 +29,13 @@ P.S for uninstalling above driver
  1. Plugin the device .
  2. Spwan terminal `$ iwconfig ` and notice the device name.
  3. `$ sudo ifconfig <device-name> down`
- 4. '$ sudo iwconfig <device-name> mode Monitor'
- 5. '$ sudo ifconfig <device-name> up'
- 6. '$ iwconfig' output mode should be now "Auto"
- 7. Go root "$ sudo -i"
- 8. airmon-ng <device-name>
- 9. airodump-ng <device-name>. Monitor mode should start
+ 4. `$ sudo iwconfig <device-name> mode Monitor`
+ 5. `$ sudo ifconfig <device-name> up`
+ 6. `$ iwconfig` output mode should be now "Auto"
+ 7. Go root `$ sudo -i`
+ 8. `airmon-ng <device-name>`
+ 9. `airodump-ng <device-name>' 
+ 10 Monitor mode should start
 
 ## Results
 Results are displayed below in table.
@@ -48,7 +49,7 @@ Results are displayed below in table.
 NOTE: All results are tested from same distance from wifi router !
 
 ## Donate
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](paypal.me/abhijeet2096)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://www.paypal.me/abhijeet2096)
 
 ## Bugs
  I was not able to inject packets. If you want to help please ping me on Email.
