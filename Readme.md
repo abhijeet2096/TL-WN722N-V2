@@ -55,7 +55,7 @@ NOTE: All results are tested from same distance from wifi router !
  I was not able to inject packets. If you want to help please ping me on Email.
 
 ## About
-The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.10 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
+The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.10 && Kernel 4.13 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
 
 ## Contributors
 
@@ -68,3 +68,5 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 
 1. https://github.com/mfruba/kernel
 2. http://www.tp-link.com/us/download/TL-WN722N.html
+3. https://github.com/mfruba/kernel/pull/21/files
+4. https://github.com/diederikdehaas/rtl8812AU/issues/75
