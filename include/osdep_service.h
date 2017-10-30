@@ -44,6 +44,10 @@
 #ifdef PLATFORM_OS_XP
 #include <osdep_service_xp.h>
 #endif
+#include <linux/version.h>
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 11, 0)
+#include <linux/sched/signal.h>
+#endif
 
 #ifdef PLATFORM_OS_CE
 #include <osdep_service_ce.h>
