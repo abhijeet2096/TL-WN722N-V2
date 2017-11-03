@@ -1,4 +1,4 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.10 (GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.10 & 4.13(GNU/LINUX)
 
 ## TL-WN722N-V2
 
@@ -37,6 +37,15 @@ P.S for uninstalling above driver
  9. `airodump-ng <device-name>' 
  10 Monitor mode should start
 
+## Activating/Deactivating LED
+
+ 1. Clone this Repository.
+ 2. Edit "include/autoconf.h" in your favourite editor
+ 3. go to line 173 and comment/uncomment "#define CONFIG_LED"
+ 4. Make again the drivers
+ 5. Reboot system
+
+
 ## Results
 Results are displayed below in table.
 
@@ -70,3 +79,4 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 2. http://www.tp-link.com/us/download/TL-WN722N.html
 3. https://github.com/mfruba/kernel/pull/21/files
 4. https://github.com/diederikdehaas/rtl8812AU/issues/75
+5. https://www.raspberrypi.org/forums/viewtopic.php?p=342670

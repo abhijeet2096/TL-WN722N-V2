@@ -170,7 +170,7 @@
 
 #define CONFIG_SKB_COPY	//for amsdu
 
-//#define CONFIG_LED
+#define CONFIG_LED
 #ifdef CONFIG_LED
 	#define CONFIG_SW_LED
 	#ifdef CONFIG_SW_LED
