@@ -33,7 +33,7 @@ P.S for uninstalling above driver
  5. `$ sudo ifconfig <device-name> up`
  6. `$ iwconfig` output mode should be now "Auto"
  7. Go root `$ sudo -i`
- 8. `airmon-ng <device-name>`
+ 8. `airmon-ng start <device-name>`
  9. `airodump-ng <device-name>' 
  10 Monitor mode should start
 
