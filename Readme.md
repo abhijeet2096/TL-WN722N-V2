@@ -9,8 +9,9 @@
 
 ###### AS DKMS MODULE
 
-1. Change directory to /usr/src
+1. Install dependencies and Change directory to /usr/src
 	```
+	 $ sudo apt-get install git dkms git make build-essential
 	 $ cd /usr/src
 	```
 2. Clone the repository
