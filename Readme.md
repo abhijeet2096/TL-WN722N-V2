@@ -1,4 +1,4 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.8 4.10 & 4.13(GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.8, 4.10 & 4.13(GNU/LINUX)
 
 ## TL-WN722N-V2
 
@@ -7,7 +7,7 @@
 
 ## Installation Instruction
 
-### AS DKMS MODULE
+###### AS DKMS MODULE
 
 1. Change directory to /usr/src
 	```
@@ -38,7 +38,7 @@
 	 $ sudo reboot
 	```
 	
-### NOT AS DKMS MODULE
+###### NOT AS DKMS MODULE
 
 1. Spawn terminal and clone the above repo by 
 	```
