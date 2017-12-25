@@ -1,4 +1,4 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.10 & 4.13(GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.8 4.10 & 4.13(GNU/LINUX)
 
 ## TL-WN722N-V2
 
@@ -7,11 +7,47 @@
 
 ## Installation Instruction
 
-1. Clone the above repo by 
+### AS DKMS MODULE
+
+1. Change directory to /usr/src
+	```
+	 $ cd /usr/src
+	```
+2. Clone the repository
+	```
+	 $ sudo git clone https://github.com/abhijeet2096/TL-WN722N-V2
+	```
+3. Add a Symbolic link for dkms to know where source is 
+	```
+	 $ sudo dkms add ./TL-WN722N-V2
+	```
+4. Build the source
+	```
+	 $ sudo dkms build -m 8188eu -v 1.2 
+	```
+5. Install the Build drivers
+	```
+	 $ sudo dkms install -m 8188eu -v 1.2 
+	```
+6. Modprobe it .
+	```
+	 $ sudo modprobe 8188eu
+	```
+6. Reboot system .
+	```
+	 $ sudo reboot
+	```
+	
+### NOT AS DKMS MODULE
+
+1. Spawn terminal and clone the above repo by 
 	```
 	 $ git clone https://github.com/abhijeet2096/TL-WN722N-V2
 	```
-2. Spawn terminal in cloned folder.
+2. Change the working directory with
+	```
+	 $ cd TL-WN722N-V2
+	``` 
 3. Clean using `$ sudo make clean` .
 4. Compile using `$ sudo make all` .
 4. Install above driver as 
@@ -40,8 +76,8 @@ P.S for uninstalling above driver
 ## Activating/Deactivating LED
 
  1. Clone this Repository.
- 2. Edit "include/autoconf.h" in your favourite editor
- 3. go to line 173 and comment/uncomment "#define CONFIG_LED"
+ 2. Edit `include/autoconf.h` in your favourite editor
+ 3. go to line 173 and comment/uncomment `#define CONFIG_LED`
  4. Make again the drivers
  5. Reboot system
 
@@ -64,7 +100,7 @@ NOTE: All results are tested from same distance from wifi router !
  I was not able to inject packets. If you want to help please ping me on Email.
 
 ## About
-The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.10 && Kernel 4.13 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
+The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.8 ,4.10 && Kernel 4.13 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
 
 ## Contributors
 
@@ -80,3 +116,4 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 3. https://github.com/mfruba/kernel/pull/21/files
 4. https://github.com/diederikdehaas/rtl8812AU/issues/75
 5. https://www.raspberrypi.org/forums/viewtopic.php?p=342670
+6. http://xmodulo.com/build-kernel-module-dkms-linux.html 
