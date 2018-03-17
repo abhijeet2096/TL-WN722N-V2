@@ -1,4 +1,4 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.8, 4.10 & 4.13(GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.8, 4.10, 4.13, 4.14 & 4.15(GNU/LINUX)
 
 ## TL-WN722N-V2
 
@@ -7,11 +7,11 @@
 ## Requirements
 
 Install appropriate "linux-headers" for your linux distribution before make !
- (For Ex for ubuntu
-	 ```
+
+For Example for ubuntu [Very Important]
+```
 	 $ sudo apt-get install linux-headers
-	 ```
-	 )
+```
 
 ## Installation Instruction
 
@@ -109,7 +109,7 @@ NOTE: All results are tested from same distance from wifi router !
  I was not able to inject packets. If you want to help please ping me on Email.
 
 ## About
-The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.8 ,4.10 && Kernel 4.13 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
+The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.8 ,4.10, 4.13,4.14 & 4.15 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
 
 ## Contributors
 
@@ -127,3 +127,4 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 5. https://www.raspberrypi.org/forums/viewtopic.php?p=342670
 6. http://xmodulo.com/build-kernel-module-dkms-linux.html
 7. https://github.com/abperiasamy/rtl8812AU_8821AU_linux/pull/242/commits/af2ee890d7abefb559a0a2aee4b4e0da686ab9a8
+8. https://github.com/jpts/rtl8188eu/blob/master/patches/b.patch
