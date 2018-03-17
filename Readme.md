@@ -1,9 +1,17 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.8, 4.10 & 4.13(GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.8, 4.10, 4.13, 4.14 & 4.15(GNU/LINUX)
 
 ## TL-WN722N-V2
 
 ![TL-WN722N-V2](device_img.jpg?raw=true "TL-WN722N-V2")
 
+## Requirements
+
+Install appropriate "linux-headers" for your linux distribution before make !
+
+For Example for ubuntu [Very Important]
+```
+	 $ sudo apt-get install linux-headers
+```
 
 ## Installation Instruction
 
@@ -18,17 +26,17 @@
 	```
 	 $ sudo git clone https://github.com/abhijeet2096/TL-WN722N-V2
 	```
-3. Add a Symbolic link for dkms to know where source is 
+3. Add a Symbolic link for dkms to know where source is
 	```
 	 $ sudo dkms add ./TL-WN722N-V2
 	```
 4. Build the source
 	```
-	 $ sudo dkms build -m 8188eu -v 1.2 
+	 $ sudo dkms build -m 8188eu -v 1.2
 	```
 5. Install the Build drivers
 	```
-	 $ sudo dkms install -m 8188eu -v 1.2 
+	 $ sudo dkms install -m 8188eu -v 1.2
 	```
 6. Modprobe it .
 	```
@@ -38,28 +46,28 @@
 	```
 	 $ sudo reboot
 	```
-	
+
 ###### NOT AS DKMS MODULE
 
-1. Spawn terminal and clone the above repo by 
+1. Spawn terminal and clone the above repo by
 	```
 	 $ git clone https://github.com/abhijeet2096/TL-WN722N-V2
 	```
 2. Change the working directory with
 	```
 	 $ cd TL-WN722N-V2
-	``` 
+	```
 3. Clean using `$ sudo make clean` .
 4. Compile using `$ sudo make all` .
-4. Install above driver as 
+4. Install above driver as
 	```
-	 $ sudo make install 
+	 $ sudo make install
 	```
 5. Reboot your system !
 
-P.S for uninstalling above driver 
+P.S for uninstalling above driver
 	```
-	 $ sudo make uninstall 
+	 $ sudo make uninstall
 	```
 ## Activating Monitor Mode
 
@@ -71,7 +79,7 @@ P.S for uninstalling above driver
  6. `$ iwconfig` output mode should be now "Auto"
  7. Go root `$ sudo -i`
  8. `airmon-ng start <device-name>`
- 9. `airodump-ng <device-name>' 
+ 9. `airodump-ng <device-name>'
  10 Monitor mode should start
 
 ## Activating/Deactivating LED
@@ -86,10 +94,10 @@ P.S for uninstalling above driver
 ## Results
 Results are displayed below in table.
 
-| Drivers       				| Signal Strength  | 
-| ------------- 				|:-------------:   | 
-| lwfinger/rtl8188eu			|    0-10 %        | 
-| mfruba/kernel   				|    65-75 % 	   | 
+| Drivers       				| Signal Strength  |
+| ------------- 				|:-------------:   |
+| lwfinger/rtl8188eu			|    0-10 %        |
+| mfruba/kernel   				|    65-75 % 	   |
 | abhijeet2096/TL-WN722N-V2   	|    85-95 %       |
 
 NOTE: All results are tested from same distance from wifi router !
@@ -101,7 +109,7 @@ NOTE: All results are tested from same distance from wifi router !
  I was not able to inject packets. If you want to help please ping me on Email.
 
 ## About
-The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.8 ,4.10 && Kernel 4.13 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
+The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kernel 4.8 ,4.10, 4.13,4.14 & 4.15 from source from [TP-LINK-WEBSITE](http://www.tp-link.com/us/download/TL-WN722N.html) which was intially made for kernel 4.3 .
 
 ## Contributors
 
@@ -117,4 +125,6 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 3. https://github.com/mfruba/kernel/pull/21/files
 4. https://github.com/diederikdehaas/rtl8812AU/issues/75
 5. https://www.raspberrypi.org/forums/viewtopic.php?p=342670
-6. http://xmodulo.com/build-kernel-module-dkms-linux.html 
+6. http://xmodulo.com/build-kernel-module-dkms-linux.html
+7. https://github.com/abperiasamy/rtl8812AU_8821AU_linux/pull/242/commits/af2ee890d7abefb559a0a2aee4b4e0da686ab9a8
+8. https://github.com/jpts/rtl8188eu/blob/master/patches/b.patch
