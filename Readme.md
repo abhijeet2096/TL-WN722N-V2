@@ -115,8 +115,9 @@ The Drivers are for TP-LINK TL-WN722N Version 2 . The drivers are ported to kern
 
 [Abhijeet sharma](http://students.iitmandi.ac.in/~abhijeet_sharma)
 1. Github: http://github.com/abhijeet2096
-2. Email: sharma.abhijeet2096@gmail.com
-3. Mobile: +91-8629015433
+2. LinkedIn https://www.linkedin.com/in/abhijeet2096/
+3. Email: sharma.abhijeet2096@gmail.com
+4. Mobile: +91-8629015433
 
 ## References/Source/Credits
 
