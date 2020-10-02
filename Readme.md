@@ -1,4 +1,4 @@
-# TL-WN722N-V2 Drivers clean ported to Kernel 4.4,4.8, 4.10, 4.13, 4.14, 4.15 & 4.18(GNU/LINUX)
+# TL-WN722N-V2 Drivers clean ported to Kernel 4.4,4.8, 4.10, 4.13, 4.14, 4.15 & 4.18(GNU/LINUX) something erro come if you thing change or upgrade to this 
 
 ## TL-WN722N-V2
 
